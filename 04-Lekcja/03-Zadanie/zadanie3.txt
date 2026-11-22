@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x;
+    cin>>x;
+
+    int max=x;
+    int min=x;
+    int suma=0;
+    int ile=0;
+
+    while(x!=0)
+    {
+        if(x>max)
+        {
+            max=x;
+        }
+
+        if(x<min)
+        {
+            min=x;
+        }
+
+        suma=suma+x;
+        ile++;
+
+        cin>>x;
+    }
+
+    cout<<"Najwieksza liczba: "<<max<<endl;
+    cout<<"Najmniejsza liczba: "<<min<<endl;
+    cout<<"Suma: "<<suma<<endl;
+    cout<<"Srednia: "<<(double)suma/ile;
+
+    return 0;
+}
